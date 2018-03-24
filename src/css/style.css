@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Bodoni;
+  src: url("../assets/fonts/bodoni.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("../assets/fonts/gotham-bold.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("../assets/fonts/gotham-book.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url("../assets/fonts/gotham-medium.ttf"); }
+
 header {
   /* Encabezado */ }
   header #logo {
@@ -19,8 +35,10 @@ header {
       header #logo .bar p {
         /* Texto encabezado 'Press Hotel' */
         box-sizing: border-box;
+        font-family: 'Gotham Medium';
         font-size: 12px;
         left: 0;
+        margin: 0;
         padding: 0 40px;
         position: absolute;
         text-align: left;
@@ -35,3 +53,102 @@ header {
       top: 50%;
       width: 200px;
       z-index: 2; }
+
+#body-container #content section {
+  padding-bottom: 1rem; }
+  #body-container #content section#principal {
+    background-color: black;
+    color: white;
+    padding: 0 142px 42px 142px; }
+    #body-container #content section#principal hgroup hr {
+      background-color: white;
+      height: 5px;
+      margin: 0 auto;
+      width: 80%; }
+    #body-container #content section#principal hgroup h1 {
+      font-family: Bodoni;
+      padding-top: 42px;
+      text-transform: uppercase; }
+    #body-container #content section#principal hgroup h2 {
+      font-family: Bodoni;
+      padding-bottom: 42px; }
+    #body-container #content section#principal article p {
+      font-size: 14.3px; }
+  #body-container #content section#acommodations {
+    background-color: #F1F1F1;
+    padding-top: 80px;
+    padding-bottom: 50px; }
+    #body-container #content section#acommodations .previous-content hgroup h1 {
+      color: #27292F;
+      font-family: 'Gotham Book';
+      font-size: 17.03px;
+      padding-top: 25px;
+      text-align: center;
+      text-transform: uppercase; }
+    #body-container #content section#acommodations .previous-content hgroup h2 {
+      color: #979FA3;
+      font-family: 'Gotham Bold';
+      font-size: 40px;
+      line-height: 150%;
+      padding-top: 25px;
+      text-transform: uppercase; }
+    #body-container #content section#acommodations .previous-content article {
+      text-align: center; }
+      #body-container #content section#acommodations .previous-content article p {
+        text-align: left; }
+      #body-container #content section#acommodations .previous-content article button {
+        background-color: #E5E5E5;
+        border: 3px solid #E11F25;
+        border-radius: 4px;
+        color: #E11F25;
+        font-family: 'Gotham Book';
+        margin-bottom: 50px;
+        padding: 2px 8px;
+        text-align: center;
+        text-transform: uppercase; }
+    #body-container #content section#acommodations .outstanding-image {
+      padding-right: 0; }
+      #body-container #content section#acommodations .outstanding-image img {
+        width: 100%; }
+  #body-container #content section#events {
+    background-color: #FFFFFF; }
+    #body-container #content section#events h1 {
+      color: #27292F;
+      font-family: 'Gotham Book';
+      font-size: 17.03px;
+      padding-top: 63px;
+      padding-bottom: 23px;
+      text-align: center;
+      text-transform: uppercase; }
+    #body-container #content section#events ul {
+      padding-left: 0; }
+      #body-container #content section#events ul li {
+        list-style: none;
+        padding-bottom: 15px; }
+        #body-container #content section#events ul li time {
+          background-color: #27292F;
+          color: #F1F1F1; }
+          #body-container #content section#events ul li time .day {
+            font-size: 40px;
+            padding-left: 25px; }
+          #body-container #content section#events ul li time .month {
+            float: right;
+            font-size: 20px;
+            margin-top: 14px;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg); }
+        #body-container #content section#events ul li img {
+          width: 100%; }
+
+body footer {
+  background-color: #F1F1F1; }
+  body footer p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Book'; }
+    body footer p.contact {
+      text-align: right; }

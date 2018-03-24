@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Press Hotel</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="book-now">book-now</div>
-    <div class="body-container">
+    <div id="body-container">
       <header>
         <div id="logo" class="container text-center">
           <div class="bar">
-            <p>Portland Maine, Press Hotel</p>
+            <p>Portland, Maine</p>
           </div>
           <img src="assets/images/logo-press-hotel.png" alt="Press Hotel">
         </div>
@@ -47,69 +47,85 @@
         </div>    <!-- .slider-->
       </header>
       <div id="content">
-        <section id="principal">
+        <section id="principal" class="container text-center">
           <hgroup>
+            <hr>
             <h1>History in the making.</h1>
             <h2>Portland's <em>newest</em> boutique hotel</h2>
           </hgroup>
           <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec. Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec.Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec.</p>
           </article>
         </section>
         <section id="acommodations">
-          <hgroup>
-            <h1>acommodations</h1>
-            <h2>Hollywood, meet industrial chic</h2>
-          </hgroup>
-          <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, fugit, repellat. Sed eum saepe accusantium vero minima voluptates minus iure voluptatibus temporibus nisi quae culpa, animi porro excepturi architecto. Tempora.</p>
-            <button type="button" name="button">View rooms</button>
-          </article>
+          <div class="container">
+            <div class="row">
+              <div class="previous-content col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <hgroup>
+                  <h1>acommodations</h1>
+                  <h2>Hollywood, meet industrial chic</h2>
+                </hgroup>
+                <article>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, fugit, repellat. Sed eum saepe accusantium vero minima
+                    voluptates minus iure voluptatibus temporibus nisi quae culpa, animi porro excepturi architecto. Tempora.</p>
+                  <button type="button" name="button">View rooms</button>
+                </article>
+              </div>
+              <div class="outstanding-image col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <img src="assets/images/acommodation/acommodation.png" alt="Acommodations">
+              </div>    
+            </div>
+          </div>
         </section>
         <section id="events">
-          <h1>This month's anticipated events</h1>
-          <ul id="events-months">
-            <li class="event">
-              <time datetime="2018-11-08">
-                <span class="day">08</span>
-                <span class="month">nov</span>
-              </time>
-              Imagen evento # 1
-            </li>
-            <li class="event">
-              <time datetime="2018-11-08">
-                <span class="day">16</span>
-                <span class="month">nov</span>
-              </time>
-              Imagen evento # 2
-            </li>
-            <li class="event">
-              <time datetime="2018-11-08">
-                <span class="day">25</span>
-                <span class="month">nov</span>
-              </time>
-              Imagen evento # 3
-            </li>
-            <li class="event">
-              <time datetime="2018-11-08">
-                <span class="day">30</span>
-                <span class="month">nov</span>
-              </time>
-              Imagen evento # 4
-            </li>
-          </ul>
+          <div class="container">
+            <h1>This month's anticipated events</h1> 
+            <ul class="row">
+              <li class="event col-12 col-sm-6 col-md-6 col-lg-3 col-lx-3">
+                <time datetime="2018-11-08" class="position-absolute">
+                  <span class="day">08</span>
+                  <span class="month">nov</span>
+                </time>
+                <img src="assets/images/events/event-1.png" alt="Evento 1">
+              </li>
+              <li class="event col-12 col-sm-6 col-md-6 col-lg-3 col-lx-3">
+                <time datetime="2018-11-08" class="position-absolute">
+                  <span class="day">16</span>
+                  <span class="month">nov</span>
+                </time>
+                <img src="assets/images/events/event-2.png" alt="Evento 2">
+              </li>
+              <li class="event col-12 col-sm-6 col-md-6 col-lg-3 col-lx-3">
+                <time datetime="2018-11-08" class="position-absolute">
+                  <span class="day">25</span>
+                  <span class="month">nov</span>
+                </time>
+                <img src="assets/images/events/event-3.png" alt="Evento 3">
+              </li>
+              <li class="event col-12 col-sm-6 col-md-6 col-lg-3 col-lx-3">
+                <time datetime="2018-11-08" class="position-absolute">
+                  <span class="day">30</span>
+                  <span class="month">nov</span>
+                </time>
+                <img src="assets/images/events/event-4.png" alt="Evento 4">
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
       <footer>
-        <p>390 Congress St. (at Congress & Exchange Streets), Portland, Maine - Map > </p>
-        <p>(207) 653.9990 - info@portlandpresshotel.com</p>
+        <div class="container">
+          <div class="row">
+            <p class="address col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">390 Congress St. (at Congress & Exchange Streets), Portland, Maine - Map > </p>
+            <p class="contact col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">(207) 653.9990 - info@portlandpresshotel.com</p>
+          </div>
+        </div>
       </footer>
     </div>
 
     <!-- Scripts -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/script.js"></script>  </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

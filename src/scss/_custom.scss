@@ -1,4 +1,4 @@
-// _custom.scss 
+// _custom.scss
 // Importa archivos necesarios para despliegue de estilos con Sass
 
 // Incluye partes necesarias de Bootstrap
@@ -8,4 +8,6 @@
 
 // Incluye partes creadas para el Template
 @import '_variables';
+@import '_fuentes';
 @import '_header';
+@import '_bodycontent';

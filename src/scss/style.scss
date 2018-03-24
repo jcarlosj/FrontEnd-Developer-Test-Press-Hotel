@@ -1,2 +1,19 @@
-// style.scss 
+// style.scss
 @import '_custom.scss';
+
+body {
+  footer {
+    background-color: $ph-bg-footer;
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotham Book';
+
+      &.address {}
+      &.contact {
+        text-align: right;
+      }
+    }
+  }
+}

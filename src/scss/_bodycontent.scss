@@ -1,0 +1,143 @@
+// _bodycontent.scss
+#body-container {
+  #content {
+    section {
+      padding-bottom: 1rem;
+
+      &#principal {
+        background-color: $ph-bg-principal;
+        color: white;
+        padding: 0 142px 42px 142px;
+
+        hgroup {
+          hr {
+            background-color: white;
+            height: 5px;
+            margin: 0 auto;
+            width: 80%;
+          }
+          h1 {
+            font-family: Bodoni;
+            padding-top: 42px;
+            text-transform: uppercase;
+          }
+          h2 {
+            font-family: Bodoni;
+            padding-bottom: 42px;
+          }
+        }
+
+        article {
+          p {
+            font-size: 14.3px;
+          }
+        }
+      }
+
+      &#acommodations {
+        background-color: $ph-bg-acommodations;
+        padding-top: 80px;
+        padding-bottom: 50px;
+
+        .previous-content {
+          hgroup {
+            h1 {
+              color: #27292F;
+              font-family: 'Gotham Book';
+              font-size: 17.03px;
+              padding-top: 25px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            h2 {
+              color: #979FA3;
+              font-family: 'Gotham Bold';
+              font-size: 40px;
+              line-height: 150%;
+              padding-top: 25px;
+              text-transform: uppercase;
+            }
+          }
+
+          article {
+            text-align: center;
+
+            p {
+              text-align: left;
+
+            }
+            button {
+              background-color: #E5E5E5;
+              border: 3px solid #E11F25;
+              border-radius: 4px;
+              color: #E11F25;
+              font-family: 'Gotham Book';
+              margin-bottom: 50px;
+              padding: 2px 8px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .outstanding-image {
+          padding-right: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      &#events {
+        background-color: $ph-bg-events;
+
+        h1 {
+          color: #27292F;
+          font-family: 'Gotham Book';
+          font-size: 17.03px;
+          padding-top: 63px;
+          padding-bottom: 23px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        ul {
+          padding-left: 0;
+          //border: 1px solid blue;
+
+          li {
+            list-style: none;
+            padding-bottom: 15px;
+
+            time {
+              background-color: #27292F;
+              color: #F1F1F1;
+
+              .day {
+                font-size: 40px;
+                padding-left: 25px;
+              }
+              .month {
+                //border: 1px solid orange;
+                float: right;
+                font-size: 20px;
+                margin-top: 14px;
+                text-transform: uppercase;
+                transform: rotate(-90deg);
+                  -webkit-transform: rotate(-90deg);
+                  -moz-transform: rotate(-90deg);
+                  -ms-transform: rotate(-90deg);
+                  -o-transform: rotate(-90deg);
+              }
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}
