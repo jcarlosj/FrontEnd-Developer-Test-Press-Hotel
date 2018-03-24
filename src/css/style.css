@@ -1,4 +1,37 @@
-/* style.scss */
-/* _custom.scss */
-/* _variables.scss */
-/* _header.scss */
+header {
+  /* Encabezado */ }
+  header #logo {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1; }
+    header #logo .bar {
+      /* Barra encabezado 'Press Hotel' */
+      background: white;
+      height: 104px;
+      left: 0;
+      margin-top: 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      opacity: .9; }
+      header #logo .bar p {
+        /* Texto encabezado 'Press Hotel' */
+        box-sizing: border-box;
+        font-size: 12px;
+        left: 0;
+        padding: 0 40px;
+        position: absolute;
+        text-align: left;
+        text-transform: uppercase;
+        top: calc( 50% - 11px);
+        vertical-align: middle; }
+    header #logo img {
+      /* Logo 'Press Hotel' */
+      height: 200px;
+      left: calc(50% - 100px);
+      position: absolute;
+      top: 50%;
+      width: 200px;
+      z-index: 2; }
