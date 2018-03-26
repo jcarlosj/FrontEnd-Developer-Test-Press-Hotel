@@ -55,11 +55,18 @@ header {
       z-index: 2; }
 
 #body-container #content section {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  position: relative; }
   #body-container #content section#principal {
     background-color: black;
     color: white;
-    padding: 0 142px 42px 142px; }
+    padding: 0 142px 42px 142px;
+    position: relative;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10; }
     #body-container #content section#principal hgroup hr {
       background-color: white;
       height: 5px;
@@ -77,7 +84,8 @@ header {
   #body-container #content section#acommodations {
     background-color: #F1F1F1;
     padding-top: 80px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    margin-top: -200px; }
     #body-container #content section#acommodations .previous-content hgroup h1 {
       color: #27292F;
       font-family: 'Gotham Book';
@@ -144,11 +152,13 @@ header {
         #body-container #content section#events ul li img {
           width: 100%; }
 
-body footer {
-  background-color: #F1F1F1; }
-  body footer p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gotham Book'; }
-    body footer p.contact {
-      text-align: right; }
+body {
+  background-color: black; }
+  body footer {
+    background-color: #F1F1F1; }
+    body footer p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotham Book'; }
+      body footer p.contact {
+        text-align: right; }

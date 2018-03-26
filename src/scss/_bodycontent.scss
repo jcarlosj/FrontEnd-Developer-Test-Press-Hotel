@@ -1,13 +1,24 @@
 // _bodycontent.scss
 #body-container {
   #content {
+    //border: 1px solid yellow;
+
     section {
+      //border: 1px solid green;
       padding-bottom: 1rem;
+      position: relative;
 
       &#principal {
         background-color: $ph-bg-principal;
+        //border: 1px solid blue;
         color: white;
         padding: 0 142px 42px 142px;
+        position: relative;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
 
         hgroup {
           hr {
@@ -38,6 +49,7 @@
         background-color: $ph-bg-acommodations;
         padding-top: 80px;
         padding-bottom: 50px;
+        margin-top: -200px;
 
         .previous-content {
           hgroup {
