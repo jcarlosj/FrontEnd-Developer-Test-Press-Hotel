@@ -12,46 +12,50 @@
   </head>
   <body>
     <div id="book-now">
-      <div id="tap-book-now">book now</div>
-      <div id="btn-x" class="btn-close-book-now">
-        <img src="assets/images/book-now/close.svg" alt="">
+      <div id="form-book-now">
+        <div id="tap-book-now">book now</div>
+        <div id="btn-x" class="btn-close-book-now">
+          <img src="assets/images/book-now/close.svg" alt="">
+        </div>
+        <form action="#">
+          <h1 class="text-center">Book now</h1>
+          <div class="form-group">
+            <label for="arrival-date">Arrival date</label>
+            <input type="text" class="form-control" id="arrival-date" placeholder="Thurs, November 29">
+          </div>
+          <div class="form-group">
+            <label for="departure-date">Departure date</label>
+            <input type="text" class="form-control" id="departure-date" placeholder="Sat, December 1">
+          </div>
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <select class="form-control" id="adult">
+              <option>Select</option>
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>3 Adults</option>
+              <option>4 Adults or more</option>
+            </select>
+            <select class="form-control" id="child">
+              <option>Select</option>
+              <option>1 Child</option>
+              <option>2 Children</option>
+              <option>3 Children</option>
+              <option>4 Children or more</option>
+            </select>
+          </div>
+          <p class="text-center">
+            <span>Get ready!</span> You are about to get our bets price. Guaranteed.</p>
+          <div id="btn-lets-go" class="text-center">
+            <button type="submit">Let's go</button>
+          </div>
+          <p class="text-center">
+            <span>or, book your group</span>
+          </p>
+        </form>
       </div>
-      <form action="#">
-        <h1 class="text-center">Book now</h1>
-        <div class="form-group">
-          <label for="arrival-date">Arrival date</label>
-          <input type="text" class="form-control" id="arrival-date" placeholder="Thurs, November 29">
-        </div>
-        <div class="form-group">
-          <label for="departure-date">Departure date</label>
-          <input type="text" class="form-control" id="departure-date" placeholder="Sat, December 1">
-        </div>
-        <div class="form-group">
-          <label for="guests">Guests</label>
-          <select class="form-control" id="adult">
-            <option>Select</option>
-            <option>1 Adult</option>
-            <option>2 Adults</option>
-            <option>3 Adults</option>
-            <option>4 Adults or more</option>
-          </select>
-          <select class="form-control" id="child">
-            <option>Select</option>
-            <option>1 Child</option>
-            <option>2 Children</option>
-            <option>3 Children</option>
-            <option>4 Children or more</option>
-          </select>
-        </div>
-        <p class="text-center"><span>Get ready!</span> You are about to get our bets price. Guaranteed.</p>
-        <div id="btn-lets-go" class="text-center">
-          <button type="submit">Let's go</button>
-        </div>
-        <p class="text-center">
-          <span>or, book your group</span>
-        </p>
-      </form>  
     </div>
+    
     <div id="body-container">
       <header>
         <div id="logo" class="container text-center">

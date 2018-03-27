@@ -153,23 +153,28 @@ header {
           width: 100%; }
 
 #book-now {
-  background-color: #1D1D1D;
-  color: #F1F1F1;
-  font-family: 'Gotham Medium';
-  font-size: 14px;
+  width: 330px;
   height: auto;
-  padding: 0;
+  z-index: 20;
+  top: 8%;
   position: fixed;
   right: 0;
-  top: 5%;
-  width: 330px;
-  z-index: 5; }
+  padding-left: 330px; }
+  #book-now #form-book-now {
+    background-color: #1D1D1D;
+    color: #F1F1F1;
+    font-family: 'Gotham Medium';
+    font-size: 14px;
+    height: auto;
+    padding: 30px 0 30px 0;
+    width: 330px; }
   #book-now #tap-book-now {
     background-color: black;
     position: fixed;
     top: 200px;
-    right: 289px;
+    right: -41px;
     color: white;
+    cursor: pointer;
     font-family: 'Gotham Bold';
     font-size: 14px;
     height: auto;
@@ -181,8 +186,10 @@ header {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg); }
   #book-now .btn-close-book-now {
-    margin: 30px 0 0 30px; }
+    margin: 0;
+    padding: 0 30px; }
     #book-now .btn-close-book-now img {
+      cursor: pointer;
       height: 13px;
       width: 13px; }
   #book-now form {
@@ -224,6 +231,7 @@ header {
         border: 3px solid #E11F25;
         border-radius: 4px;
         color: #E11F25;
+        cursor: pointer;
         font-family: 'Gotham Book';
         padding: 2px 8px;
         text-transform: uppercase; }
