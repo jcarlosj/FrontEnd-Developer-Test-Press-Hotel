@@ -25,9 +25,9 @@ header {
     header #logo .bar {
       /* Barra encabezado 'Press Hotel' */
       background: white;
-      height: 104px;
+      height: 48px;
       left: 0;
-      margin-top: 50px;
+      margin-top: 10px;
       position: absolute;
       top: 0;
       width: 100%;
@@ -36,10 +36,10 @@ header {
         /* Texto encabezado 'Press Hotel' */
         box-sizing: border-box;
         font-family: 'Gotham Medium';
-        font-size: 12px;
+        font-size: 9px;
         left: 0;
         margin: 0;
-        padding: 0 40px;
+        padding: 5px 20px;
         position: absolute;
         text-align: left;
         text-transform: uppercase;
@@ -47,12 +47,34 @@ header {
         vertical-align: middle; }
     header #logo img {
       /* Logo 'Press Hotel' */
-      height: 200px;
-      left: calc(50% - 100px);
+      height: 70px;
+      left: calc(50% - 35px);
       position: absolute;
       top: 50%;
-      width: 200px;
+      width: 70px;
       z-index: 2; }
+  @media (min-width: 768px) {
+    header #logo .bar {
+      height: 56px;
+      margin-top: 27px; }
+      header #logo .bar p {
+        font-size: 11px;
+        padding: 4px 25px; }
+    header #logo img {
+      height: 110px;
+      left: calc(50% - 55px);
+      width: 110px; } }
+  @media (min-width: 992px) {
+    header #logo .bar {
+      height: 104px;
+      margin-top: 50px; }
+      header #logo .bar p {
+        font-size: 12px;
+        padding: 0 40px; }
+    header #logo img {
+      height: 200px;
+      left: calc(50% - 100px);
+      width: 200px; } }
 
 #body-container #content section {
   padding-bottom: 1rem;
@@ -60,10 +82,7 @@ header {
   #body-container #content section#principal {
     background-color: black;
     color: white;
-    padding: 0 142px 42px 142px;
-    position: relative;
-    top: -200px;
-    left: 0;
+    padding: 0 4px 21px 4px;
     width: 100%;
     height: auto;
     z-index: 10; }
@@ -74,31 +93,45 @@ header {
       width: 80%; }
     #body-container #content section#principal hgroup h1 {
       font-family: Bodoni;
-      padding-top: 42px;
+      font-size: 30px;
+      padding-top: 21px;
       text-transform: uppercase; }
     #body-container #content section#principal hgroup h2 {
+      font-size: 24px;
       font-family: Bodoni;
-      padding-bottom: 42px; }
+      padding-bottom: 21px; }
     #body-container #content section#principal article p {
       font-size: 14.3px; }
+  @media (min-width: 992px) {
+    #body-container #content section#principal {
+      position: relative;
+      top: -200px;
+      left: 0;
+      padding: 0 142px 42px 142px; }
+    #body-container #content section hgroup hr {
+      height: 3px; }
+    #body-container #content section hgroup h1 {
+      padding-top: 42px; }
+    #body-container #content section hgroup h2 {
+      padding-top: 42px; } }
   #body-container #content section#acommodations {
     background-color: #F1F1F1;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    margin-top: -200px; }
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 0; }
     #body-container #content section#acommodations .previous-content hgroup h1 {
       color: #27292F;
       font-family: 'Gotham Book';
-      font-size: 17.03px;
+      font-size: 26px;
       padding-top: 25px;
       text-align: center;
       text-transform: uppercase; }
     #body-container #content section#acommodations .previous-content hgroup h2 {
       color: #979FA3;
       font-family: 'Gotham Bold';
-      font-size: 40px;
+      font-size: 26px;
       line-height: 150%;
-      padding-top: 25px;
+      padding-top: 10px;
       text-transform: uppercase; }
     #body-container #content section#acommodations .previous-content article {
       text-align: center; }
@@ -115,17 +148,29 @@ header {
         text-align: center;
         text-transform: uppercase; }
     #body-container #content section#acommodations .outstanding-image {
-      padding-right: 0; }
+      padding-right: 15px; }
       #body-container #content section#acommodations .outstanding-image img {
         width: 100%; }
+  @media (min-width: 992px) {
+    #body-container #content section#acommodations {
+      margin-top: -200px;
+      padding-top: 80px;
+      padding-bottom: 50px; }
+      #body-container #content section#acommodations .previous-content hgroup h1 {
+        font-size: 17.03px; }
+      #body-container #content section#acommodations .previous-content hgroup h2 {
+        font-size: 40px;
+        padding-top: 25px; }
+    #body-container #content section .outstanding-image {
+      padding-right: 0; } }
   #body-container #content section#events {
     background-color: #FFFFFF; }
     #body-container #content section#events h1 {
       color: #27292F;
       font-family: 'Gotham Book';
-      font-size: 17.03px;
-      padding-top: 63px;
-      padding-bottom: 23px;
+      font-size: 26px;
+      padding-top: 25px;
+      padding-bottom: 20px;
       text-align: center;
       text-transform: uppercase; }
     #body-container #content section#events ul {
@@ -151,13 +196,18 @@ header {
             -o-transform: rotate(-90deg); }
         #body-container #content section#events ul li img {
           width: 100%; }
+  @media (min-width: 992px) {
+    #body-container #content section#events h1 {
+      font-size: 17.03px;
+      padding-top: 63px;
+      padding-bottom: 23px; } }
 
 #book-now {
   width: 330px;
   height: auto;
   z-index: 20;
-  top: 8%;
-  position: fixed;
+  top: 0;
+  position: absolute;
   right: 0;
   padding-left: 330px; }
   #book-now #form-book-now {
@@ -170,7 +220,7 @@ header {
     width: 330px; }
   #book-now #tap-book-now {
     background-color: black;
-    position: fixed;
+    position: absolute;
     top: 200px;
     right: -41px;
     color: white;
@@ -184,7 +234,8 @@ header {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg); }
+    -o-transform: rotate(-90deg);
+    width: 122px; }
   #book-now .btn-close-book-now {
     margin: 0;
     padding: 0 30px; }
@@ -236,34 +287,64 @@ header {
         padding: 2px 8px;
         text-transform: uppercase; }
 
-/*
-#book-now {
+@media (min-width: 576px) {
+  #book-now {
+    top: 8%;
     position: fixed;
-    top: 5%;
-    right: 0;
-    background-color: black;
-    border: 1px solid orange;
-    color: white;
-    font-family: 'Gotham Bold';
-    font-size: 14px;
-    height: auto;
-    padding: 8px 16px;
-    text-transform: uppercase;/*
-    transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);        
-    width: 330px;
-    z-index: 5;      
-}*/
+    right: 0; }
+    #book-now #tap-book-now {
+      position: fixed; } }
+
+@media (min-width: 768px) {
+  #book-now {
+    top: 8%;
+    position: fixed;
+    right: 0; }
+    #book-now #tap-book-now {
+      position: fixed; } }
+
+@media (min-width: 992px) {
+  #book-now {
+    top: 8%;
+    position: fixed;
+    right: 0; }
+    #book-now #tap-book-now {
+      position: fixed; } }
+
+@media (min-width: 1200px) {
+  #book-now {
+    top: 8%;
+    position: fixed;
+    right: 0; }
+    #book-now #tap-book-now {
+      position: fixed; } }
+
 body {
   background-color: black; }
   body footer {
-    background-color: #F1F1F1; }
+    background-color: #F1F1F1;
+    padding: 10px 0; }
+    body footer p {
+      margin: 3px 0;
+      padding: 0;
+      font-family: 'Gotham Book';
+      font-size: 13px;
+      font-weight: bold; }
+      body footer p.address {
+        text-align: center; }
+      body footer p.contact {
+        text-align: center; }
+  @media (min-width: 768px) {
     body footer p {
       margin: 0;
-      padding: 0;
-      font-family: 'Gotham Book'; }
+      font-weight: normal; }
+      body footer p.address {
+        text-align: center; }
       body footer p.contact {
-        text-align: right; }
+        text-align: center; } }
+  @media (min-width: 992px) {
+    body footer p {
+      margin: 0;
+      font-weight: normal; }
+      body footer p.contact {
+        text-align: right; } }

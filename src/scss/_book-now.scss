@@ -4,8 +4,8 @@
     width: 330px;
     height: auto;
     z-index: 20;
-    top: 8%;
-    position: fixed;
+    top: 0;
+    position: absolute;
     right: 0;
     padding-left: 330px;
 
@@ -22,7 +22,7 @@
 
     #tap-book-now {
         background-color: black;
-        position: fixed;
+        position: absolute;
         top: 200px;
         right: -41px;
         //border: 1px solid orange;
@@ -37,7 +37,8 @@
             -webkit-transform: rotate(-90deg);
             -moz-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
-            -o-transform: rotate(-90deg);    
+            -o-transform: rotate(-90deg); 
+        width: 122px;       
     }
 
     .btn-close-book-now {
@@ -112,25 +113,51 @@
     }
 }
 
+// MediaQuery #book-now
+@include media-breakpoint-up( sm ) {
+    #book-now {
+        top: 8%;
+        position: fixed;
+        right: 0;
 
-/*
-#book-now {
-    position: fixed;
-    top: 5%;
-    right: 0;
-    background-color: black;
-    border: 1px solid orange;
-    color: white;
-    font-family: 'Gotham Bold';
-    font-size: 14px;
-    height: auto;
-    padding: 8px 16px;
-    text-transform: uppercase;/*
-    transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);        
-    width: 330px;
-    z-index: 5;      
-}*/
+        #tap-book-now {
+            position: fixed;
+        }
+    }
+}
+
+@include media-breakpoint-up( md ) {
+    #book-now {
+        top: 8%;
+        position: fixed;
+        right: 0;
+
+        #tap-book-now {
+            position: fixed;
+        }
+    }
+}
+
+@include media-breakpoint-up( lg ) {
+    #book-now {
+        top: 8%;
+        position: fixed;
+        right: 0;
+
+        #tap-book-now {
+            position: fixed;
+        }
+    }
+}
+
+@include media-breakpoint-up( xl ) {
+    #book-now {
+        top: 8%;
+        position: fixed;
+        right: 0;
+
+        #tap-book-now {
+            position: fixed;
+        }
+    }
+}

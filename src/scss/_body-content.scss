@@ -12,10 +12,7 @@
         background-color: $ph-bg-principal;
         //border: 1px solid blue;
         color: white;
-        padding: 0 142px 42px 142px;
-        position: relative;
-        top: -200px;
-        left: 0;
+        padding: 0 4px 21px 4px;
         width: 100%;
         height: auto;
         z-index: 10;
@@ -29,12 +26,14 @@
           }
           h1 {
             font-family: Bodoni;
-            padding-top: 42px;
+            font-size: 30px;
+            padding-top: 21px;
             text-transform: uppercase;
           }
           h2 {
+            font-size: 24px;
             font-family: Bodoni;
-            padding-bottom: 42px;
+            padding-bottom: 21px;
           }
         }
 
@@ -45,18 +44,38 @@
         }
       }
 
+      @include media-breakpoint-up( lg ) {
+        &#principal {
+          position: relative;
+          top: -200px;
+          left: 0;
+          padding: 0 142px 42px 142px;
+        }
+        hgroup {
+          hr {
+            height: 3px;
+          }
+          h1 {
+            padding-top: 42px;
+          }
+          h2 {
+            padding-top: 42px;
+          }
+        }
+      }
+
       &#acommodations {
         background-color: $ph-bg-acommodations;
-        padding-top: 80px;
-        padding-bottom: 50px;
-        margin-top: -200px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin-top: 0;
 
         .previous-content {
           hgroup {
             h1 {
               color: #27292F;
               font-family: 'Gotham Book';
-              font-size: 17.03px;
+              font-size: 26px;
               padding-top: 25px;
               text-align: center;
               text-transform: uppercase;
@@ -64,9 +83,9 @@
             h2 {
               color: #979FA3;
               font-family: 'Gotham Bold';
-              font-size: 40px;
+              font-size: 26px;
               line-height: 150%;
-              padding-top: 25px;
+              padding-top: 10px;
               text-transform: uppercase;
             }
           }
@@ -93,7 +112,7 @@
         }
 
         .outstanding-image {
-          padding-right: 0;
+          padding-right: 15px;
 
           img {
             width: 100%;
@@ -101,15 +120,53 @@
         }
       }
 
+      @include media-breakpoint-up( lg ) {
+        &#acommodations {
+          margin-top: -200px;
+          padding-top: 80px;
+          padding-bottom: 50px;
+
+          .previous-content {
+            hgroup {
+              h1 {
+                font-size: 17.03px;
+              }
+              h2 {
+                font-size: 40px;
+                padding-top: 25px;
+              }
+            }
+
+            article {
+
+              p {
+
+              }
+              button {
+
+              }
+            }
+          }
+        }
+
+        .outstanding-image {
+          padding-right: 0;
+
+          img {
+
+          }
+        }
+      } 
+
       &#events {
         background-color: $ph-bg-events;
 
         h1 {
           color: #27292F;
           font-family: 'Gotham Book';
-          font-size: 17.03px;
-          padding-top: 63px;
-          padding-bottom: 23px;
+          font-size: 26px;
+          padding-top: 25px;
+          padding-bottom: 20px;
           text-align: center;
           text-transform: uppercase;
         }
@@ -148,8 +205,31 @@
             }
           }
         }
-        
       }
+
+      @include media-breakpoint-up( lg ) {
+        &#events {
+
+          h1 {
+            font-size: 17.03px;
+            padding-top: 63px;
+            padding-bottom: 23px;
+          }
+
+          ul {
+            //border: 1px solid blue;
+            li {
+              time {
+                .day {}
+                .month {
+                  //border: 1px solid orange;
+                }
+              }
+              img {}
+            }
+          }
+        }
+      }      
     }
   }
 }

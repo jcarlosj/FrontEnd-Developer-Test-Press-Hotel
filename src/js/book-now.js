@@ -39,13 +39,13 @@ $(document).ready(function () {
 
         },
         open: () => {
-            BookNow.changes('.75', '0', '289px', '#E11F25');
+            BookNow.changes('.75', '0', '287px', '#E11F25');
             BookNow.animation();
 
             BookNow.stateForm = true;
         },
         close: () => {
-            BookNow.changes('1', '330px', '-41px', 'black');
+            BookNow.changes('1', '330px', '-43px', 'black');
             BookNow.animation();
 
             BookNow.stateForm = false;

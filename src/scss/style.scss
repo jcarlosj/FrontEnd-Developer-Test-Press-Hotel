@@ -6,15 +6,52 @@ body {
   
   footer {
     background-color: $ph-bg-footer;
+    padding: 10px 0;
 
     p {
-      margin: 0;
+      margin: 3px 0;
       padding: 0;
       font-family: 'Gotham Book';
+      font-size: 13px;
+      font-weight: bold;
 
-      &.address {}
+      &.address {
+        text-align: center;
+      }
       &.contact {
-        text-align: right;
+        text-align: center;
+      }
+    }
+  }
+
+  @include media-breakpoint-up( md ) {
+    footer {
+
+      p {
+        margin: 0;
+        font-weight: normal;
+
+        &.address {
+          text-align: center;
+        }
+        &.contact {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up( lg ) {
+    footer {
+
+      p {
+        margin: 0;
+        font-weight: normal;
+
+        &.address {}
+        &.contact {
+          text-align: right;
+        }
       }
     }
   }

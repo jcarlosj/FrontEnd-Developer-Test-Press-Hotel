@@ -11,9 +11,9 @@ header {
     .bar {
       /* Barra encabezado 'Press Hotel' */
       background: white;
-      height: 104px;
+      height: 48px;
       left: 0;
-      margin-top: 50px;
+      margin-top: 10px;
       position: absolute;
       top: 0;
       width: 100%;
@@ -23,10 +23,10 @@ header {
         /* Texto encabezado 'Press Hotel' */
         box-sizing: border-box;
         font-family: 'Gotham Medium';
-        font-size: 12px;
+        font-size: 9px;
         left: 0;
         margin: 0;
-        padding: 0 40px;
+        padding: 5px 20px;
         position: absolute;
         text-align: left;
         text-transform: uppercase;
@@ -37,12 +37,52 @@ header {
 
     img {
       /* Logo 'Press Hotel' */
-      height: $ph-logo-height;
-      left: calc(50% - 100px);
+      height: $ph-logo-height-xs;
+      left: calc(50% - 35px);
       position: absolute;
       top: 50%;
-      width: $ph-logo-width;
+      width: $ph-logo-width-xs;
       z-index: 2;
+    }
+  }
+
+  @include media-breakpoint-up( md ) {
+    #logo {
+
+      .bar {
+        height: 56px;
+        margin-top: 27px;
+
+        p {
+          font-size: 11px;
+          padding: 4px 25px;
+        }
+      }
+      img {
+        height: $ph-logo-height-md;
+        left: calc(50% - 55px);
+        width: $ph-logo-width-md;
+      }
+    }
+  }
+
+  @include media-breakpoint-up( lg ) {
+    #logo {
+
+      .bar {
+        height: 104px;
+        margin-top: 50px;
+
+        p {
+          font-size: 12px;
+          padding: 0 40px;
+        }
+      }
+      img {
+        height: $ph-logo-height-lg;
+        left: calc(50% - 100px);
+        width: $ph-logo-width-lg;
+      }
     }
   }
 }
