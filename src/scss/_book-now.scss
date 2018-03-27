@@ -37,7 +37,16 @@
             display: block;
             text-transform: uppercase;
         }
+        input {
+            background: url( '../assets/images/book-now/calendar.png' );
+            background-color: white;
+            background-position: 95% center;
+            background-repeat: no-repeat;
+            border-radius: 0;
+        }
         select {
+            border-radius: 0;
+            color: #979FA3;
             float: left;
             width: 100px;
 
@@ -52,6 +61,10 @@
             clear: both;
             color: #979FA3;
             margin-bottom: 40px;
+
+            span {
+                text-transform: uppercase;
+            }
         }
         #btn-lets-go {
             margin-bottom: 40px;

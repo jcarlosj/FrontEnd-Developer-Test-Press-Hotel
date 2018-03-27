@@ -4,4 +4,8 @@ $( document ) .ready( function() {
   $('.carousel').carousel({
     interval: 8000
   });
+
+  // Book Now (Datepicker)
+  $( '#arrival-date' ) .datepicker();
+  $( '#departure-date' ) .datepicker();
 });

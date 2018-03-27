@@ -180,7 +180,15 @@ header {
     #book-now form label {
       display: block;
       text-transform: uppercase; }
+    #book-now form input {
+      background: url("../assets/images/book-now/calendar.png");
+      background-color: white;
+      background-position: 95% center;
+      background-repeat: no-repeat;
+      border-radius: 0; }
     #book-now form select {
+      border-radius: 0;
+      color: #979FA3;
       float: left;
       width: 100px; }
       #book-now form select#adult {
@@ -191,6 +199,8 @@ header {
       clear: both;
       color: #979FA3;
       margin-bottom: 40px; }
+      #book-now form p span {
+        text-transform: uppercase; }
     #book-now form #btn-lets-go {
       margin-bottom: 40px; }
       #book-now form #btn-lets-go button {
